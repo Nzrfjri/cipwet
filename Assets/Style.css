@@ -23,6 +23,7 @@ nav {
     align-items: center;
     display: flex;
     min-height: 50px;
+    max-height: 100px;
 }
 
 nav img {
@@ -42,7 +43,7 @@ nav li {
     display: inline-block;
     max-block-size: 100%;
     border: 2px solid #F9F7F7;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 nav a {
@@ -250,5 +251,12 @@ footer {
     }
     main p {
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    nav li{
+        font-size: smaller;
+        padding: 3px;
     }
 }
