@@ -201,8 +201,13 @@ aside {
     padding-left: 10px;
 }
 
+.geo img {
+    width: 100%;
+}
+
 .geo table {
     width: 100%;
+    padding: 5px;
 }
 
 .geo th, td {
