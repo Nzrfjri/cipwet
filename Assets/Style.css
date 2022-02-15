@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif', serif;
+}
+
+header {
+    max-height: 100%;
+    max-width: 100%;
+    display: inline;
+}
+
+nav {
+    background-color: #112D4E;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    min-height: 50px;
+}
+
+nav img {
+    max-height: 75px;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+nav ul{
+    min-width: 75%;
+    text-align: right;
+}
+
+nav li {
+    margin: 1% 4%;
+    padding: 8px;
+    display: inline-block;
+    max-block-size: 100%;
+    border: 2px solid #F9F7F7;
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav li:hover {
+    background-color: #F9F7F7;
+}
+
+nav li:active {
+    background-color: transparent;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:active {
+    color: transparent;
+}
+
+#jumbotron {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/BackgroundWeb_Utama3.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 40px 60px 40px;
+    font-size: 20px;
+    margin: 0;
+}
+
+#jumbotron h1 {
+    color: black;
+    font-size: 2em;
+}
+
+#jumbotron p {
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 25px;
+    overflow: auto;
+}
+
+main p {
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.kotak {
+    border: 5px solid #3F72AF;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+main img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.gambar-content {
+    width: 100%;
+    max-height: 300px;
+}
+
+.gambar-aside {
+    height: 100%;
+    max-width: 100%;
+    align-items: center;
+}
+
+.floating {
+    overflow: auto;
+}
+
+.gambar-ikon {
+    max-width: 30%;
+    float: left;
+    padding: 0 10px 10px 10px;
+}
+
+.kotak > p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.slider {
+    width: 800px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    max-height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    max-width: 100%;
+    transition: 2s;
+}
+
+.slide img {
+    max-width: 800px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation-manual, .navigation-auto {
+    display: none;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+blockquote p {
+    font-style: italic;
+    text-indent: 0;
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 10px;
+}
+
+.geo table {
+    width: 100%;
+}
+
+.geo th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+.pembuat {
+    text-align: center;
+}
+
+.pembuat table {
+    width: 100%;
+}
+
+.pembuat th, td {
+    padding: 5px;
+}
+
+footer {
+    color: white;
+    background-color: #112D4E;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1080px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gambar-ikon {
+        max-width: 100%;
+    }
+    main p {
+        text-align: left;
+    }
+}
