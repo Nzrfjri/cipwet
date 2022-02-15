@@ -258,5 +258,6 @@ footer {
     nav li{
         font-size: smaller;
         padding: 3px;
+        margin: 3% 3%;
     }
 }
