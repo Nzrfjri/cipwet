@@ -257,7 +257,7 @@ footer {
 @media screen and (max-width: 387px) {
     nav li{
         font-size: smaller;
-        padding: 3px;
+        padding: 4px;
         margin: 3% 3%;
     }
 }
