@@ -29,6 +29,14 @@
             }
 
             .kotak {
+              width: 100%;
+            }
+
+            .content {
+              width: 70%;
+            }
+
+            aside {
               width: 30%;
             }
 
@@ -40,7 +48,8 @@
             }
 
             @media screen and (max-width: 768px) {
-              .kotak {
+              .content,
+              aside {
                 width: 100%;
               }
             }
@@ -66,7 +75,7 @@
         </header>
 
         <main>
-            <div class="content">
+            <div class="content float-start">
                 <div>
                     <div class="accordion" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
@@ -120,29 +129,30 @@
                         </div>  
                     </div>
                 </div>
+
+                <br>
             </div>
 
-            <br>
-            <br>
-
-            <aside>
+            <aside class="float-end">
               <div>
                 <div class="d-block m-2">
-                  <button type="button" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_Gmail.svg" alt="Logo_Gmail" width="25px" height="25px"><span class="pl-10">tkj1skensala@gmail.com</span></button>
+                  <button type="button" onclick="window.location.href='https://nzrfjri.github.io'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_Gmail.svg" alt="Logo_Gmail" width="25px" height="25px"><span class="pl-10">tkj1skensala@gmail.com</span></button>
                 </div>
                 
                 <div class="d-block m-2">
-                  <button type="button" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_Instagram.svg" alt="Logo_Instagram" width="25px" height="25px"><span class="pl-10">@official_xtkj1_skensala</span></button>
+                  <button type="button" onclick="window.location.href='https://nzrfjri.github.io'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_Instagram.svg" alt="Logo_Instagram" width="25px" height="25px"><span class="pl-10">@official_xtkj1_skensala</span></button>
                 </div>
                 
                 <div class="d-block m-2">
-                  <button type="button" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_YouTube.svg" alt="Logo_YouTube" width="25px" height="25px"><span class="pl-10">TKJ 1 Skensala</span></button>
+                  <button type="button" onclick="window.location.href='https://nzrfjri.github.io'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_YouTube.svg" alt="Logo_YouTube" width="25px" height="25px"><span class="pl-10">TKJ 1 Skensala</span></button>
                 </div>
               </div>
-            </aside>
 
-            <br>
-            <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </aside>
         </main>
 
         <footer class="bg-dark text-center text-center p-3 fixed-bottom">
