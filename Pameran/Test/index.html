@@ -17,11 +17,15 @@
           }
 
           figure img {
-            max-width: 75vw;
+            max-width: 75% !important;
           }
 
           .pl-10 {
             padding-left: 10px;
+          }
+
+          .mt-50 {
+            margin-top: 50px;
           }
 
           .kotak {
@@ -36,6 +40,10 @@
             width: 40%;
           }
 
+          .video {
+            width: 100%;
+          }
+
           footer {
               color: white;
               background-color: black;
@@ -47,9 +55,13 @@
             .kotak {
               width: 100%;
             }
-            .konten-gambar,
+            .konten-gambar {
+              width: 100%;
+              margin: 0;
+            }
             .konten-lain {
               width: 100%;
+              margin: 0;
             }
           }
       </style>
@@ -57,7 +69,7 @@
 
   <body>
     <header class="d-inline">
-      <nav class="navbar stickey-top navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-dark bg-dark">
         <div>
           <a class="navbar-brand" href="#">
           <img src="../../Assets/Images/Logo_TKJ1.jpeg" width="30" height="30" class="d-inline-block align-top img-circle" alt="">
@@ -67,13 +79,13 @@
       </nav>
     </header>
 
-    <main>
+    <main class="mt-50">
       <!-- Konten -->
       <h2>Sileut Wayang</h2>
       <div class="konten-gambar text-center d-inline-block">
         <figure class="figure">
           <img src="../../Assets/Images/Karya_Riski.jpg" class="figure-img img-fluid rounded" alt="Foto Karya Seni">
-          <figcaption class="figure-caption">Riski Maulana, 2022.</figcaption>
+          <figcaption class="figure-caption">Riski Maulana, 2022</figcaption>
         </figure>
       </div>
       
@@ -87,6 +99,7 @@
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
               <div class="accordion-body">
+                <!-- Konten -->
                 Seni Rupa 2D
               </div>
             </div>
@@ -100,6 +113,7 @@
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
               <div class="accordion-body">
+                <!-- Konten -->
                 Lukis
               </div>
             </div>
@@ -113,15 +127,24 @@
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
+                  <!-- Konten -->
                   <p>"Wayang adalah seni pertunjukan tradisional asli Indonesia yang berasal dan berkembang pesat di Pulau Jawa dan Bali.</p>
                   <p>Wayang merupakan salah satu karya seni budaya yang menonjol diantara banyak karya budaya lainnya."</p>
                 </div>
               </div>
           </div>  
         </div>
-      </div>
 
-      <br>
+        <div>
+          <br>
+
+          <h3>Video</h3>
+          <!-- Konten -->
+          <iframe src="https://www.youtube.com/embed/2lZKoeE-H58" frameborder="0" title="Video YouTube" class="video text-center"></iframe>
+        </div>
+
+        <br>
+      </div>
       
       <aside>
         <h3>Kontak Kami</h3>
@@ -131,22 +154,20 @@
           </div>
           
           <div class="d-block m-2">
-            <button type="button" onclick="window.location.href='https://nzrfjri.github.io'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_Instagram.svg" alt="Logo_Instagram" width="25px" height="25px"><span class="pl-10">@official_xtkj1_skensala</span></button>
+            <button type="button" onclick="window.location.href='https://instagram.com/senbud_xtkjone'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_Instagram.svg" alt="Logo_Instagram" width="25px" height="25px"><span class="pl-10">@official_xtkj1_skensala</span></button>
           </div>
           
           <div class="d-block m-2">
-            <button type="button" onclick="window.location.href='https://nzrfjri.github.io'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_YouTube.svg" alt="Logo_YouTube" width="25px" height="25px"><span class="pl-10">TKJ 1 Skensala</span></button>
+            <button type="button" onclick="window.location.href='https://www.youtube.com/channel/UCZHIDurw3K78b8xwbH5D7yw'" class="btn btn-outline-secondary d-inline-block kotak text-start"><img src="../../Assets/Images/Logo_YouTube.svg" alt="Logo_YouTube" width="25px" height="25px"><span class="pl-10">TKJ 1 Skensala</span></button>
           </div>
         </div>
 
         <br>
         <br>
-        <br>
-        <br>
       </aside>
     </main>
 
-    <footer class="bg-dark text-center text-center p-3 fixed-bottom">
+    <footer class="bg-dark text-center text-center p-3 sticky-bottom">
       &#169; TKJ 1 Skensala
     </footer>
 
